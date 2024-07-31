@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Product Name EditText -->
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:hint="@string/product_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:autofillHints="Product Name"
+        />
+
+    <!-- Category RadioButtons -->
+    <RadioGroup
+        android:id="@+id/radioGroupCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbFoodProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_products" />
+
+        <RadioButton
+            android:id="@+id/rbMedicines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medicines"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbCosmetics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cosmetics"
+            />
+    </RadioGroup>
+
+    <!-- Expiration Date EditText -->
+    <EditText
+        android:id="@+id/etExpirationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="@string/expiration_date"
+        android:inputType="none"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,TextFields" />
+
+    <!-- Quantity EditText -->
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="Autofill" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="#009688"
+        android:text="@string/save"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>
